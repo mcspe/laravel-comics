@@ -1,0 +1,33 @@
+header {
+    .ms-cont{
+        height: 5rem;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .ms-nav {
+            text-transform: uppercase;
+
+            li {
+                line-height: 5rem;
+
+                a{
+                    height: 100%;
+                    font-size: .7rem;
+                    color: $primary-dark;
+                    &:hover{
+                        color: $primary-blue;
+                        box-shadow: 0 .3rem 0 $primary-blue;
+                    }
+                    .active {
+                        color: $primary-blue;
+                        box-shadow: 0 .3rem 0 $primary-blue;
+                    }
+                }
+            }
+        }
+    }
+}
