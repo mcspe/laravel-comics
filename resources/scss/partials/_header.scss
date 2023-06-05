@@ -18,16 +18,22 @@ header {
                     height: 100%;
                     font-size: .7rem;
                     color: $primary-dark;
-                    &:hover{
+                    &:hover, &.active{
                         color: $primary-blue;
-                        box-shadow: 0 .3rem 0 $primary-blue;
-                    }
-                    .active {
-                        color: $primary-blue;
-                        box-shadow: 0 .3rem 0 $primary-blue;
+                        box-shadow: 0 -.3rem 0 $primary-blue inset;
                     }
                 }
             }
+        }
+    }
+    .ms-jumbotron {
+        height: 20rem;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: top center;
         }
     }
 }

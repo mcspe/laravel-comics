@@ -19,4 +19,7 @@
             </ul>
         </nav>
     </div>
+    <div class="ms-jumbotron">
+        <img src="{{ Vite::asset('resources/img/jumbotron.jpg') }}" alt="Jumbotron">
+    </div>
 </header>
