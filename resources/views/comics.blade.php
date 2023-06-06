@@ -9,7 +9,7 @@
         @foreach ($comics as $comic)
             <div class="col-2 mb-5">
                 <div class="ms-comic-card">
-                    <a href="#">
+                    <a href="{{route('comic_detail', ['slug' => $comic['slug']])}}">
                         <div class="ms-card-img">
                             <img src="{{$comic['thumb']}}" alt="{{$comic['title']}}">
                         </div>

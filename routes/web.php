@@ -14,12 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    return view('coming_soon');
 })->name('home');
 
 Route::get('/characters', function () {
-
-    return view('characters');
+    return view('coming_soon');
 })->name('characters');
 
 Route::get('/comics', function () {
@@ -27,34 +26,44 @@ Route::get('/comics', function () {
     return view('comics', compact('comics'));
 })->name('comics');
 
+Route::get('/comic_detail/{slug}', function ($slug) {
+    $comics = array_filter(config('comics'), fn($comic) => $comic['slug'] === $slug);
+    $comic = $comics[array_key_first($comics)];
+    if (empty($comic)) {
+        header(route('comics'));
+    }
+
+    return view('comic_detail', compact('comic'));
+})->name('comic_detail');
+
 Route::get('/movies', function () {
-    return view('movies');
+    return view('coming_soon');
 })->name('movies');
 
 Route::get('/tv', function () {
-    return view('tv');
+    return view('coming_soon');
 })->name('tv');
 
 Route::get('/games', function () {
-    return view('games');
+    return view('coming_soon');
 })->name('games');
 
 Route::get('/collectibles', function () {
-    return view('collectibles');
+    return view('coming_soon');
 })->name('collectibles');
 
 Route::get('/videos', function () {
-    return view('videos');
+    return view('coming_soon');
 })->name('videos');
 
 Route::get('/fans', function () {
-    return view('fans');
+    return view('coming_soon');
 })->name('fans');
 
 Route::get('/news', function () {
-    return view('news');
+    return view('coming_soon');
 })->name('news');
 
 Route::get('/shop', function () {
-    return view('shop');
+    return view('coming_soon');
 })->name('shop');
