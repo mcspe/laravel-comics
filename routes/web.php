@@ -18,12 +18,13 @@ Route::get('/', function () {
 })->name('home');
 
 Route::get('/characters', function () {
-    $comics = config('comics');
-    return view('characters', compact('comics'));
+
+    return view('characters');
 })->name('characters');
 
 Route::get('/comics', function () {
-    return view('comics');
+    $comics = config('comics');
+    return view('comics', compact('comics'));
 })->name('comics');
 
 Route::get('/movies', function () {
