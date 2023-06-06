@@ -14,7 +14,9 @@
 
 <body>
     @include('layouts.partials.header')
-    @yield('content')
+    <main>
+        @yield('content')
+    </main>
     @include('layouts.partials.footer')
 </body>
 

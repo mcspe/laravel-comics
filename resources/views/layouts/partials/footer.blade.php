@@ -28,8 +28,8 @@
         </div>
     </section>
     <section class="ms-footer-menu">
-        <div class="container d-flex justify-content-around align-items-center py-5">
-            <nav class="d-flex flex-column flex-wrap align-content-start">
+        <div class="container d-flex justify-content-between align-items-start h-100">
+            <nav class="d-flex flex-column flex-wrap align-content-start w-100 py-3">
                 @foreach ($footer_menu as $key => $menu)
                 <div class="ms-menu my-2 mx-3 h-auto">
                     <h3 class="my-2">{{ $key }}</h3>
@@ -43,8 +43,25 @@
                 </div>
                 @endforeach
             </nav>
-            <div class="logo">
-                <!-- <img src="../../assets/img/dc-logo-bg.png" alt=""> -->
+            <div class="logo w-75">
+            </div>
+        </div>
+    </section>
+    <section class="ms-connect">
+        <div class="container d-flex justify-content-between align-items-center p-4">
+            <button class="btn ms-btn text-white text-uppercase p-2">Sign up now!</button>
+            <div class="ms-social d-flex justify-content-between align-items-center gap-2">
+                <h5 class="text-uppercase me-4 mb-0">follow us</h5>
+                <a href="#" class="">
+                <img class="w-75" src="{{ Vite::asset('resources/img/footer-facebook.png') }}" alt="facebook"></a>
+                <a href="#" class="">
+                <img class="w-75" src="{{ Vite::asset('resources/img/footer-twitter.png') }}" alt="twitter"></a>
+                <a href="#" class="">
+                <img class="w-75" src="{{ Vite::asset('resources/img/footer-youtube.png') }}" alt="youtube"></a>
+                <a href="#" class="">
+                <img class="w-75" src="{{ Vite::asset('resources/img/footer-pinterest.png') }}" alt="pinterest"></a>
+                <a href="#" class="">
+                <img class="w-75" src="{{ Vite::asset('resources/img/footer-periscope.png') }}" alt="periscope"></a>
             </div>
         </div>
     </section>

@@ -1,5 +1,4 @@
 footer {
-    padding-bottom: 200px;
     .ms-cta {
         background: $primary-blue;
 
@@ -36,9 +35,11 @@ footer {
 
     .ms-footer-menu {
         background: url('../img/footer-bg.jpg');
+        background-size: cover;
+        height: 400px;
 
         nav{
-            max-height: 360px;
+            max-height: 100%;
 
             .ms-menu {
                 display: inline-block;
@@ -67,9 +68,26 @@ footer {
         }
 
         .logo{
-            background: url('../../assets/img/dc-logo-bg.png');
             height: 100%;
-            width: 75%;
+            background: url('../img/dc-logo-bg.png');
+            background-size: cover;
+            background-position: center;
+        }
+    }
+
+    .ms-connect {
+        background: $primary-grey;
+
+        .ms-btn {
+            font-size: .8rem;
+            border: 2px solid $primary-dark-blue;
+            border-radius: 0;
+        }
+
+        .ms-social {
+            h5 {
+                color: $primary-dark-blue;
+            }
         }
     }
 }

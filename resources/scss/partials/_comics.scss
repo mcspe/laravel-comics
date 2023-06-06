@@ -1,0 +1,18 @@
+.ms-comics {
+    h4 {
+        display: inline-block;
+        position: relative;
+        top: -50%;
+        background: $primary-dark-blue;
+        color: white;
+    }
+
+    .ms-comic-card {
+        overflow: hidden;
+        img {
+            width: 100%;
+            object-fit: cover;
+            object-position: top center;
+        }
+    }
+}
